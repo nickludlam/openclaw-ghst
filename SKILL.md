@@ -137,6 +137,9 @@ When operating the `ghst` skill, the agent must adhere to the following rules to
 
 For detailed instructions on the "Read-Edit-Write" workflow to edit post or page lexical content (including minor rewording and URL changes), see the [`editing.md`](references/editing.md) reference.
 
+### 3. Searching and Filtering Posts and Pages
+
+When you need to find specific posts or pages (e.g., by title, status, or tag), refer to the advanced filtering and NQL query examples documented in [`post.md`](references/post.md) and [`page.md`](references/page.md).
 
 ### Command Reference
 
@@ -175,7 +178,7 @@ Detailed documentation for each resource can be found in the `references/` direc
 *   **Social Interaction**: `ghst socialweb note --content "Hello from the CLI"`
 
 
-### 3. Safe Operation & Protections
+### 4. Safe Operation & Protections
 
 - **Approvals & Notices**: You must explicitly ask the user before performing destructive commands or bulk updates. **Note**: The CLI emits `GHST_AGENT_NOTICE:` lines on `stderr` when a manual confirmation is interrupted. If you see this, you **must** stop and ask the user for explicit approval.
 - **Destructive Commands**: Always use `--yes --non-interactive` for the following once approved:
